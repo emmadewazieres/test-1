@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main()
 {
-  printf("beauté sublime");
+  printf("bowté sublime");
+  printf("bowté prout sublime");
   return 0;
 }
