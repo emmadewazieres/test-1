@@ -1,0 +1,23 @@
+
+$_SESSION='3'; // A DEFINIR AVEC LE LOGIN 
+
+$con = connection();
+  $stmt = mysqli_query($con, "SELECT * FROM posts where id_user=2");
+  $assoc = mysqli_fetch_assoc($stmt);
+ 
+  mysqli_close($con);
+
+  
+echo "<pre>";
+foreach($assoc as $assocs){
+print_r($assoc);
+
+}
+echo "</pre>";
+
+
+foreach($assoc as $assocs){
+
+echo $assoc['contenu_post'];
+}
+

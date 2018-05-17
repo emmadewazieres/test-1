@@ -1,0 +1,4 @@
+<?php
+include("function.php");
+session start();
+ajoutPost($_POST['link'], $_POST['description']);
